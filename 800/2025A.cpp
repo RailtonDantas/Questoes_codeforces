@@ -19,17 +19,15 @@ int main(){
             }
             break;
         }
-
-        if(z == 0){
-            z += a.length() + b.length();
-        }
-        else{
-            z += a.length() + b.length() - 2*z + 1;
-        }
-
-       
-
-        cout << z << endl;
+        cout << min(a.length() + b.length() + z,a.length() + b.length() - z + 1) << endl;
     }
     return 0;
 }
+
+// 3
+// GARAGE
+// GARAGEFORSALE
+// ABCDE
+// AABCD
+// TRAINING
+// DRAINING
